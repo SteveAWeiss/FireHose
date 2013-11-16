@@ -1,0 +1,16 @@
+<!-- This is the new page new.html.erb file -->
+
+<h1 class="h1-custom"> Load up a New Picture!</h1>
+
+<div class="span4 offset6 boxy">
+	<h2>
+		<%= simple_form_for @pic do |f|%>
+			<%= f.input :lesson %>
+			<%= f.input :emotion %>
+			<%= f.input :learned %>
+
+			<%= submit_tag 'Save' %>
+		<% end %>
+
+	</h2>
+</div>
