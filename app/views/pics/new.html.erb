@@ -7,8 +7,10 @@
 	<br/>
 		<%= simple_form_for @pic do |f|%>
 			
-			<%= f.input :lesson, :label => 'Your latest lesson?', placeholder: '1, 2, etc.' %>
+			<%= f.input :lesson, :label => 'Your latest lesson?', placeholder: '1, 2, etc.' %> 
+			<br/>
 			<%= f.input :emotion, label: 'How you feeling buddy?', :placeholder => 'Happy, Stoked, Jazzed'%>
+			<br/>
 			<%= f.input :learned, label: 'Tell me about it!', placeholder: 'Lessons learned...'%>
 		<br/>
 		<br/>
