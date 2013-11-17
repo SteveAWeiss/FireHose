@@ -23,13 +23,20 @@ body {
 	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, san-serif;
 	font-weight: 100;
 	font-size: 48px;
-	color: orange;
-}
+	color: white;
+	line-height: 64px
+	}
 
 h2 {
 	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, san-serif;
 	font-weight: 200;
 	font-size: 36px;
-	color: blue;
+	color: white;
+}
 
+label {
+	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, san-serif;
+	font-weight: 200;
+	font-size: 24px;
+	color: white;	
 }

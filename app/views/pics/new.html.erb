@@ -1,16 +1,19 @@
 <!-- This is the new page new.html.erb file -->
 
-<h1 class="h1-custom"> Load up a New Picture!</h1>
-
-<div class="span4 offset6 boxy">
-	<h2>
+<div class="span6 offset3 text-center boxy">
+	<h1 class="h1-custom"> 
+		Load up a New Status!
+	</h1>
+	<br/>
 		<%= simple_form_for @pic do |f|%>
-			<%= f.input :lesson %>
-			<%= f.input :emotion %>
-			<%= f.input :learned %>
+			
+			<%= f.input :lesson, :label => 'Your latest lesson?', placeholder: '1, 2, etc.' %>
+			<%= f.input :emotion, label: 'How you feeling buddy?', :placeholder => 'Happy, Stoked, Jazzed'%>
+			<%= f.input :learned, label: 'Tell me about it!', placeholder: 'Lessons learned...'%>
+		<br/>
+		<br/>
 
-			<%= submit_tag 'Save' %>
+		<%= submit_tag 'Save', :class => 'btn btn-warning btn-large' %>
+		
 		<% end %>
-
-	</h2>
 </div>
