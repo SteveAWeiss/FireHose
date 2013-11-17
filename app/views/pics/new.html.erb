@@ -2,16 +2,18 @@
 
 <div class="span6 offset3 text-center boxy">
 	<h1 class="h1-custom"> 
-		Load up a New Status!
+		I Will Know ALL!
 	</h1>
 	<br/>
 		<%= simple_form_for @pic do |f|%>
 			
 			<%= f.input :lesson, :label => 'Your latest lesson?', placeholder: '1, 2, etc.' %> 
 			<br/>
+			<%= f.input :image %>
+			<br/>
 			<%= f.input :emotion, label: 'How you feeling buddy?', :placeholder => 'Happy, Stoked, Jazzed'%>
 			<br/>
-			<%= f.input :learned, label: 'Tell me about it!', placeholder: 'Lessons learned...'%>
+			<%= f.input :learned, label: 'Tell me your secrets!', placeholder: 'The money is buried under...'%>
 		<br/>
 		<br/>
 
